@@ -8,7 +8,7 @@ public class RetrofitInstance {
 
 
     private static Retrofit retrofit = null;
-    private static String BASE_URL = "https://raw.githubusercontent.com/Enderyasli/cihataksu/main/";
+    private static String BASE_URL = "https://raw.githubusercontent.com/cihataksu/hr180027cihataksu/main/";
 
     public static IGetCarList getCarList() {
 

@@ -62,14 +62,13 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
         RequestOptions options = new RequestOptions()
                 .format(DecodeFormat.PREFER_ARGB_8888)
                 .centerCrop()
-                .diskCacheStrategy(DiskCacheStrategy.NONE);
+                .diskCacheStrategy(DiskCacheStrategy.ALL);
 
 
         Glide.with(context).
                 asBitmap()
                 .load(item.getLogoUrl())
                 .apply(options)
-                .skipMemoryCache(true)
                 .into(holder.imageView);
 
 
