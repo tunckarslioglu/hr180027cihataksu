@@ -13,7 +13,7 @@ Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 
 </p>
 
-## Clean Simple Architecture
+## Architecture
 ![Architecture](https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/mimari.png)
 
 ## Libraries
