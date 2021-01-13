@@ -14,7 +14,7 @@ Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 </p>
 
 ## Clean Simple Architecture
-![Architecture](https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/mimari.jpg)
+![Architecture](https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/mimari.png)
 
 ## Libraries
 <li><a href="https://bumptech.github.io/glide/">Glide</a></li>
