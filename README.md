@@ -5,10 +5,11 @@
 Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss1.png" alt="SS1" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss2.png" alt="SS2" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss3.png" alt="SS3" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss4.png" alt="SS4" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/e1.jpg" alt="SS1" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/e2.jpg" alt="SS2" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/e3.jpg" alt="SS3" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/internet.jpg" alt="SS4" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/quit.jpg" alt="SS5" />
 
 </p>
 
