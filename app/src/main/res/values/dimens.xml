@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">22sp</dimen>
+    <dimen name="baseSize">16dp</dimen>
+    <dimen name="base18Size">18dp</dimen>
+    <dimen name="zeroSize">0dp</dimen>
+    <dimen name="mediumSize">12dp</dimen>
+    <dimen name="smallSize">8dp</dimen>
+    <dimen name="small_mediumSize">14sp</dimen>
+    <dimen name="bigSize">24dp</dimen>
+    <dimen name="listImageSize">150dp</dimen>
+    <dimen name="detailImageSize">220dp</dimen>
+</resources>

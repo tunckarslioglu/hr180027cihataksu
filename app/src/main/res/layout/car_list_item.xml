@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mediumSize"
+        android:layout_marginTop="@dimen/smallSize"
+        android:layout_marginEnd="@dimen/mediumSize"
+        android:layout_marginBottom="@dimen/smallSize"
+        app:cardCornerRadius="@dimen/smallSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleTextview"
+                android:layout_width="@dimen/zeroSize"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/baseSize"
+                android:layout_marginTop="@dimen/smallSize"
+                android:layout_marginEnd="@dimen/baseSize"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_mediumSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/carImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listImageSize"
+                android:layout_marginStart="@dimen/bigSize"
+                android:layout_marginTop="@dimen/mediumSize"
+                android:layout_marginEnd="@dimen/bigSize"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextview" />
+
+
+            <TextView
+                android:id="@+id/yearTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/baseSize"
+                android:layout_marginTop="@dimen/smallSize"
+                android:layout_marginEnd="@dimen/baseSize"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/yearText"
+                android:textSize="@dimen/mediumSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carImageView"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/detailTv"
+                android:layout_width="@dimen/zeroSize"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/baseSize"
+                android:layout_marginTop="@dimen/smallSize"
+                android:layout_marginEnd="@dimen/baseSize"
+                android:layout_marginBottom="@dimen/smallSize"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="@dimen/mediumSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yearTv"
+                tools:ignore="SmallSp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

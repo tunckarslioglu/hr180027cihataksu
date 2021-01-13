@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HR180027_CihatAksuFinal</string>
+    <string name="listPageTitle">2020 Dünyanın En Hızlı 10 Arabası Listesi</string>
+    <string name="yearText">Yıl: </string>
+    <string name="loadingText">Yükleniyor...</string>
+    <string name="openNetwork">İnterneti Aç</string>
+    <string name="networkContent">Uygulamayı Kullanmak için internete bağlayın</string>
+    <string name="networkTitle">İnternet Bağlantınız Yok</string>
+</resources>
