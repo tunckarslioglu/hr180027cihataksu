@@ -1,6 +1,6 @@
 
 # Cars App
-![appicon](https://github.com/Enderyasli/cihataksu/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+![appicon](https://github.com/cihataksu/hr180027cihataksu/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 <h2 id="Outputs">Outputs</h2>
@@ -14,7 +14,7 @@ Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 </p>
 
 ## Clean Simple Architecture
-![Architecture](https://github.com/cagataymuhammet/GuestList/blob/master/images/clean_arch.png)
+![Architecture](https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/mimari.jpg)
 
 ## Libraries
 <li><a href="https://bumptech.github.io/glide/">Glide</a></li>
