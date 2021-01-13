@@ -5,25 +5,18 @@
 Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss1.png" alt="SS1" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss2.png" alt="SS2" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss3.png" alt="SS3" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/GuestList/blob/master/images/ss4.png" alt="SS4" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/e1.jpg" alt="SS1" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/e2.jpg" alt="SS2" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/e3.jpg" alt="SS3" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/internet.jpg" alt="SS4" />
+  <img height= "400"  src="https://github.com/cihataksu/hr180027cihataksu/blob/main/Screens/quit.jpg" alt="SS5" />
 
 </p>
-
-## Architecture
-The app uses MVVM [Model-View-ViewModel] architecture to have a unidirectional flow of data, separation of concern, testability, and a lot more.
-
-![Architecture](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
-
-# What is MVVM?
-Model-View-ViewModel (ie MVVM) is a template of a client application architecture, proposed by John Gossman as an alternative to MVC and MVP patterns when using Data Binding technology. Its concept is to separate data presentation logic from business logic by moving it into particular class for a clear distinction.  
 
 ## Clean Simple Architecture
 ![Architecture](https://github.com/cagataymuhammet/GuestList/blob/master/images/clean_arch.png)
 
-## Libraries and tools 🛠
+## Libraries
 <li><a href="https://bumptech.github.io/glide/">Glide</a></li>
 <li><a href="https://github.com/ReactiveX/RxJava">RxJava</a></li>
 <li><a href="https://github.com/ReactiveX/RxAndroid">RxAndroid</a></li>
