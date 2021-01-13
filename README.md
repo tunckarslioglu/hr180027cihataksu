@@ -13,18 +13,10 @@ Cars uygulaması ilgi çekici araba listelerini kullanıcılara sunmaktadır.
 
 </p>
 
-## Architecture
-The app uses MVVM [Model-View-ViewModel] architecture to have a unidirectional flow of data, separation of concern, testability, and a lot more.
-
-![Architecture](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
-
-# What is MVVM?
-Model-View-ViewModel (ie MVVM) is a template of a client application architecture, proposed by John Gossman as an alternative to MVC and MVP patterns when using Data Binding technology. Its concept is to separate data presentation logic from business logic by moving it into particular class for a clear distinction.  
-
 ## Clean Simple Architecture
 ![Architecture](https://github.com/cagataymuhammet/GuestList/blob/master/images/clean_arch.png)
 
-## Libraries and tools 🛠
+## Libraries
 <li><a href="https://bumptech.github.io/glide/">Glide</a></li>
 <li><a href="https://github.com/ReactiveX/RxJava">RxJava</a></li>
 <li><a href="https://github.com/ReactiveX/RxAndroid">RxAndroid</a></li>
