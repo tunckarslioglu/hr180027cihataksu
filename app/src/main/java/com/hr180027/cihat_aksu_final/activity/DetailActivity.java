@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Html;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,21 +30,17 @@ public class DetailActivity extends AppCompatActivity {
         titleTv = findViewById(R.id.titleTv);
         detailTv = findViewById(R.id.detailTv);
 
-
         Car item = (Car) getIntent().getSerializableExtra("CarObject");
-
-
-      //  titleTv.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>"));
-        titleTv.setText(item.getCarName());
-        detailTv.setText(item.getDetail());
-
-
-        setImageView(item.getLogoUrl());
+        getData(item);
 
 
     }
 
-    private void setImageView(String imageUrl) {
+
+    private void getData(Car item ) {
+
+        titleTv.setText(item.getCarName());
+        detailTv.setText(Html.fromHtml(item.getDetail()));
         RequestOptions options = new RequestOptions()
                 .format(DecodeFormat.PREFER_ARGB_8888)
                 .centerCrop()
@@ -51,7 +48,7 @@ public class DetailActivity extends AppCompatActivity {
 
         Glide.with(context).
                 asBitmap()
-                .load(imageUrl)
+                .load(item.getLogoUrl())
                 .apply(options)
                 .skipMemoryCache(true)
                 .into(imageView);

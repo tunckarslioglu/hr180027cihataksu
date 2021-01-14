@@ -78,19 +78,8 @@ public class SplashActivity extends AppCompatActivity {
         builder.setTitle(R.string.networkTitle)
                 .setMessage(R.string.networkContent)
                 .setCancelable(false)
-                .setNegativeButton(context.getString(android.R.string.cancel), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-
-                    }
-                })
-                .setPositiveButton(R.string.openNetwork, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        openNetwork();
-                    }
-                }).create();
+                .setNegativeButton(context.getString(android.R.string.cancel), (dialog, which) -> finish())
+                .setPositiveButton(R.string.openNetwork, (dialog, which) -> openNetwork()).create();
         builder.show();
     }
 

@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="@dimen/zeroSize"
+        android:layout_height="@dimen/splashImageSize"
+        android:layout_marginStart="@dimen/splashMargin"
+        android:layout_marginEnd="@dimen/splashMargin"
         android:background="@drawable/splash_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

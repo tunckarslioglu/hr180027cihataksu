@@ -6,4 +6,6 @@
     <string name="openNetwork">İnterneti Aç</string>
     <string name="networkContent">Uygulamayı Kullanmak için internete bağlayın</string>
     <string name="networkTitle">İnternet Bağlantınız Yok</string>
+    <string name="exitAppTitle">Uygulamayı Kapatmak Üzeresin!</string>
+    <string name="exitAppContent">Çıkmak istediğinize emin misiniz?</string>
 </resources>

@@ -54,30 +54,7 @@ public class MainActivity extends AppCompatActivity {
         showProgress(true);
 
 
-        /*
-        Call<GithubResponse> callAsync = (Call<GithubResponse>) RetrofitInstance.getCarList().getCars();
-        callAsync.enqueue(new Callback<GithubResponse>() {
-            @Override
-            public void onResponse(Call<GithubResponse> call, Response<GithubResponse> response) {
-              //  Log.d("gelenresponse",response.body()+"");
-                Log.d("gelenresponse",response.body().getResponse().size()+"");
-                List<Car> response1= response.body().getResponse();
-                Log.d("gelenaraba",response1.get(0).getCarName());
-            }
-
-            @Override
-            public void onFailure(Call<GithubResponse> call, Throwable t) {
-                Log.e("serverError",t.getLocalizedMessage()+"");
-
-            }
-        });
-
-
-
-         */
-
         getCarList = RetrofitInstance.getCarList();
-
 
         compositeDisposable.add(getCarList.getCars()
                 .subscribeOn(Schedulers.io())
@@ -86,9 +63,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onNext(GithubResponse githubResponse) {
                         showProgress(false);
-
-
-                        Log.d("gelenresponse", githubResponse.getResponse().get(0).getCarName() + "");
 
                         initRecyclerView((ArrayList<Car>) githubResponse.getResponse());
 
@@ -114,14 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void initRecyclerView(ArrayList<Car> carDetail) {
 
-        onItemClickListener = new OnItemClickListener() {
-            @Override
-            public void onClick(int position, Car carDetail1) {
-                Intent i = new Intent(MainActivity.this, DetailActivity.class);
-                i.putExtra("CarObject", carDetail1);
-                MainActivity.this.startActivity(i);
+        onItemClickListener = (position, carDetail1) -> {
+            Intent i = new Intent(MainActivity.this, DetailActivity.class);
+            i.putExtra("CarObject", carDetail1);
+            MainActivity.this.startActivity(i);
 
-            }
         };
 
         adapter = new CarAdapter(MainActivity.this, carDetail, onItemClickListener);
@@ -148,12 +119,15 @@ public class MainActivity extends AppCompatActivity {
         } else {
             builder = new AlertDialog.Builder(context);
         }
-        builder.setTitle("Uygulamayı Kapatmak Üzeresin!")
-                .setMessage("Çıkmak istediğinize emin misiniz?")
+        builder.setTitle(R.string.exitAppTitle)
+                .setMessage(R.string.exitAppContent)
                 .setCancelable(false)
                 .setNegativeButton(context.getString(android.R.string.ok), (dialog, which) -> {
-                    finishAndRemoveTask();
-                    System.exit(0);
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finishAffinity();
                 })
                 .setPositiveButton(context.getString(android.R.string.cancel), (dialog, which) -> dialog.dismiss()).create();
         builder.show();
