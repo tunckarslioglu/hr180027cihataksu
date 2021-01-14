@@ -33,7 +33,6 @@ public class DetailActivity extends AppCompatActivity {
         Car item = (Car) getIntent().getSerializableExtra("CarObject");
         getData(item);
 
-
     }
 
 
