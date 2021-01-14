@@ -68,4 +68,16 @@ public class Car  implements Serializable {
     @Expose
     String LogoUrl;
 
+    public String getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(String speed) {
+        this.speed = speed;
+    }
+
+    @SerializedName("Speed")
+    @Expose
+    String speed;
+
 }

@@ -28,7 +28,7 @@ public class DetailActivity extends AppCompatActivity {
         context = this;
         imageView = findViewById(R.id.imageView);
         titleTv = findViewById(R.id.titleTv);
-        detailTv = findViewById(R.id.detailTv);
+        detailTv = findViewById(R.id.speedTv);
 
         Car item = (Car) getIntent().getSerializableExtra("CarObject");
         getData(item);

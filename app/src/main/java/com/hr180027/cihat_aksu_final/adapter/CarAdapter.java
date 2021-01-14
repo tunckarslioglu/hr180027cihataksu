@@ -54,7 +54,7 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
 
 
         holder.titleTextview.setText(item.getCarName());
-        holder.detailTextview.setText(item.getDetail());
+        holder.speedTextview.setText(context.getString(R.string.speedText) + item.getSpeed());
         holder.yearTv.setText(context.getString(R.string.yearText) + item.getYear());
 
         holder.itemView.setOnClickListener(v -> onItemClickListener.onClick(position, item));
@@ -83,14 +83,14 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView titleTextview;
-        TextView detailTextview;
+        TextView speedTextview;
         ImageView imageView;
         TextView yearTv;
 
         public ViewHolder(View view) {
             super(view);
             titleTextview = view.findViewById(R.id.titleTextview);
-            detailTextview = view.findViewById(R.id.detailTv);
+            speedTextview = view.findViewById(R.id.speedTv);
             yearTv = view.findViewById(R.id.yearTv);
             imageView = view.findViewById(R.id.carImageView);
 

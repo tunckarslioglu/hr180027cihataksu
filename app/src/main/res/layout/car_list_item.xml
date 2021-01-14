@@ -72,7 +72,7 @@
                 tools:ignore="SmallSp" />
 
             <TextView
-                android:id="@+id/detailTv"
+                android:id="@+id/speedTv"
                 android:layout_width="@dimen/zeroSize"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/baseSize"
@@ -82,6 +82,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:textSize="@dimen/mediumSize"
+                android:text="@string/speedText"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
